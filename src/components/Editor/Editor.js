@@ -40,7 +40,7 @@ function Editor(props) {
       <div className={styles.row}>
         <InputControl
           label="Title"
-          placeholder="Enter title eg. Frontend developer"
+          placeholder="Enter title eg. Auror"
           value={values.title}
           onChange={(event) =>
             setValues((prev) => ({ ...prev, title: event.target.value }))
@@ -48,7 +48,7 @@ function Editor(props) {
         />
         <InputControl
           label="Company Name"
-          placeholder="Enter company name eg. amazon"
+          placeholder="Enter company name eg. Gringotts"
           value={values.companyName}
           onChange={(event) =>
             setValues((prev) => ({ ...prev, companyName: event.target.value }))
@@ -69,7 +69,7 @@ function Editor(props) {
         />
         <InputControl
           label="Location"
-          placeholder="Enter location eg. Remote"
+          placeholder="Enter location eg. Diagon Alley"
           value={values.location}
           onChange={(event) =>
             setValues((prev) => ({ ...prev, location: event.target.value }))
@@ -123,7 +123,7 @@ function Editor(props) {
         <InputControl
           label="Title"
           value={values.title}
-          placeholder="Enter title eg. Chat app"
+          placeholder="Enter title eg. Horcrux Tracker"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, title: event.target.value }))
           }
@@ -186,7 +186,7 @@ function Editor(props) {
         <InputControl
           label="Title"
           value={values.title}
-          placeholder="Enter title eg. B-tech"
+          placeholder="Enter title eg. Wizarding degree"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, title: event.target.value }))
           }
@@ -195,7 +195,7 @@ function Editor(props) {
       <InputControl
         label="College/School Name"
         value={values.college}
-        placeholder="Enter name of your college/school"
+        placeholder="Enter name of your college/school eg. Hogwarts"
         onChange={(event) =>
           setValues((prev) => ({ ...prev, college: event.target.value }))
         }
@@ -227,7 +227,7 @@ function Editor(props) {
       <div className={styles.row}>
         <InputControl
           label="Name"
-          placeholder="Enter your full name eg. Aashu"
+          placeholder="Enter your full name eg. Harry Potter"
           value={values.name}
           onChange={(event) =>
             setValues((prev) => ({ ...prev, name: event.target.value }))
@@ -236,7 +236,7 @@ function Editor(props) {
         <InputControl
           label="Title"
           value={values.title}
-          placeholder="Enter your title eg. Frontend developer"
+          placeholder="Enter your title eg. Wizard"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, title: event.target.value }))
           }
@@ -285,22 +285,22 @@ function Editor(props) {
       <div className={styles.column}>
         <label>List your achievements</label>
         <InputControl
-          placeholder="Line 1"
+          placeholder="Achievement 1"
           value={values.points ? values.points[0] : ""}
           onChange={(event) => handlePointUpdate(event.target.value, 0)}
         />
         <InputControl
-          placeholder="Line 2"
+          placeholder="Achievement 2"
           value={values.points ? values.points[1] : ""}
           onChange={(event) => handlePointUpdate(event.target.value, 1)}
         />
         <InputControl
-          placeholder="Line 3"
+          placeholder="Achievement 3"
           value={values.points ? values.points[2] : ""}
           onChange={(event) => handlePointUpdate(event.target.value, 2)}
         />
         <InputControl
-          placeholder="Line 4"
+          placeholder="Achievement 4"
           value={values.points ? values.points[3] : ""}
           onChange={(event) => handlePointUpdate(event.target.value, 3)}
         />
@@ -324,7 +324,7 @@ function Editor(props) {
       <InputControl
         label="Other"
         value={values.other}
-        placeholder="Enter something"
+        placeholder="Enter anything relevant"
         onChange={(event) =>
           setValues((prev) => ({ ...prev, other: event.target.value }))
         }
