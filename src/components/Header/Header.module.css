@@ -7,7 +7,7 @@
   justify-content: space-evenly; /*This was a life saver*/
   gap: 30px;
   background-color: rgb(238, 252, 255);
-  min-height: 85vh;
+  min-height: 100vh;
 }
 
 .heading {

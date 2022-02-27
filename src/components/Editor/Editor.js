@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+
 import { X } from "react-feather";
 
 import InputControl from "../InputControl/InputControl";
@@ -319,14 +320,14 @@ function Editor(props) {
       />
     </div>
   );
-  const otherBody = (
-    <div className={styles.detail}>
+  const skillsBody = (
+    <div className={styles.detail + " " + "btn-blue"}>
       <InputControl
-        label="Other"
-        value={values.other}
-        placeholder="Enter anything relevant"
+        label="Skills"
+        value={values.skills}
+        placeholder="Add your skills seperated by comma"
         onChange={(event) =>
-          setValues((prev) => ({ ...prev, other: event.target.value }))
+          setValues((prev) => ({ ...prev, skills: event.target.value }))
         }
       />
     </div>
@@ -346,8 +347,8 @@ function Editor(props) {
         return achievementsBody;
       case sections.summary:
         return summaryBody;
-      case sections.other:
-        return otherBody;
+      case sections.skills:
+        return skillsBody;
       default:
         return null;
     }
@@ -465,13 +466,13 @@ function Editor(props) {
         }));
         break;
       }
-      case sections.other: {
-        const tempDetail = values.other;
+      case sections.skills: {
+        const tempDetail = values.skills;
 
         props.setInformation((prev) => ({
           ...prev,
-          [sections.other]: {
-            ...prev[sections.other],
+          [sections.skills]: {
+            ...prev[sections.skills],
             detail: tempDetail,
             sectionTitle,
           },
@@ -559,7 +560,7 @@ function Editor(props) {
       phone: activeInfo?.detail?.phone || "",
       email: activeInfo?.detail?.email || "",
       summary: typeof activeInfo?.detail !== "object" ? activeInfo.detail : "",
-      other: typeof activeInfo?.detail !== "object" ? activeInfo.detail : "",
+      skills: typeof activeInfo?.detail !== "object" ? activeInfo.detail : "",
     });
   }, [activeSectionKey]);
 

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import ReactToPrint from "react-to-print";
 import { Download } from "react-feather"; // from npm lets you import feathericons.com icons as components. HOW AWESOME IS THIS!!!
+import Button from 'react-bootstrap/Button'; // Bootstrap button component is a nice and easy way to make buttons
 
 import Editor from "../Editor/Editor";
 import Resume from "../Resume/Resume";
@@ -16,8 +17,9 @@ function Body() {
     education: "Education",
     achievement: "Achievements",
     summary: "Summary",
-    other: "Other",
+    skills: "Skills",
   };
+  
   const resumeRef = useRef();
 
   const [activeColor, setActiveColor] = useState(colors[0]);
@@ -52,15 +54,16 @@ function Body() {
       sectionTitle: sections.summary,
       detail: "",
     },
-    [sections.other]: {
-      id: sections.other,
-      sectionTitle: sections.other,
+    [sections.skills]: {
+      id: sections.skills,
+      sectionTitle: sections.skills,
       detail: "",
     },
   });
 
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} >
       <p className={styles.heading}>Let's Start Building!</p>
       <div className={styles.toolbar}>
         <div className={styles.colors}>
@@ -78,9 +81,9 @@ function Body() {
         <ReactToPrint
           trigger={() => {
             return (
-              <button>
+              <Button variant="primary">
                 Download <Download />
-              </button>
+              </Button>
             );
           }}
           content={() => resumeRef.current}

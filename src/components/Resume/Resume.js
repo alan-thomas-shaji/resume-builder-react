@@ -1,13 +1,5 @@
 import React, { forwardRef, useEffect, useRef, useState } from "react";
-import {
-  AtSign,
-  Calendar,
-  GitHub,
-  Linkedin,
-  MapPin,
-  Paperclip,
-  Phone,
-} from "react-feather";
+import { AtSign, Calendar, GitHub, Linkedin, MapPin, Paperclip, Phone } from "react-feather";
 
 import styles from "./Resume.module.css";
 
@@ -27,7 +19,7 @@ const Resume = forwardRef((props, ref) => {
     education: information[sections.education],
     basicInfo: information[sections.basicInfo],
     summary: information[sections.summary],
-    other: information[sections.other],
+    skills: information[sections.skills],
   };
 
   const getFormattedDate = (value) => {
@@ -240,19 +232,19 @@ const Resume = forwardRef((props, ref) => {
         </div>
       </div>
     ),
-    [sections.other]: (
+    [sections.skills]: (
       <div
-        key={"other"}
+        key={"skills"}
         draggable
-        onDragOver={() => seTarget(info.other?.id)}
-        onDragEnd={() => setSource(info.other?.id)}
+        onDragOver={() => seTarget(info.skills?.id)}
+        onDragEnd={() => setSource(info.skills?.id)}
         className={`${styles.section} ${
-          info.other?.sectionTitle ? "" : styles.hidden
+          info.skills?.sectionTitle ? "" : styles.hidden
         }`}
       >
-        <div className={styles.sectionTitle}>{info.other?.sectionTitle}</div>
+        <div className={styles.sectionTitle}>{info.skills?.sectionTitle}</div>
         <div className={styles.content}>
-          <p className={styles.overview}>{info?.other?.detail}</p>
+          <p className={styles.overview}>{info?.skills?.detail}</p>
         </div>
       </div>
     ),
@@ -288,7 +280,7 @@ const Resume = forwardRef((props, ref) => {
   useEffect(() => {
     setColumns([
       [sections.project, sections.education, sections.summary],
-      [sections.workExp, sections.achievement, sections.other],
+      [sections.workExp, sections.achievement, sections.skills],
     ]);
   }, []);
 

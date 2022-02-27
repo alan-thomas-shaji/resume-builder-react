@@ -3,7 +3,6 @@ import resumePic from "../../assets/resume-new.svg";  // got this baby from undr
 import styles from "./Header.module.css";
 
 
-
 // This component is the header of the application. This includes the logo, and the header text
 function Header() {
   return (
