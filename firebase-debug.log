@@ -1,0 +1,50 @@
+[debug] [2022-02-27T13:30:57.555Z] ----------------------------------------------------------------------
+[debug] [2022-02-27T13:30:57.557Z] Command:       D:\ImportantShitFiles\node.exe C:\Users\capta\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-02-27T13:30:57.557Z] CLI Version:   10.2.1
+[debug] [2022-02-27T13:30:57.558Z] Platform:      win32
+[debug] [2022-02-27T13:30:57.558Z] Node Version:  v14.15.4
+[debug] [2022-02-27T13:30:57.558Z] Time:          Sun Feb 27 2022 19:00:57 GMT+0530 (India Standard Time)
+[debug] [2022-02-27T13:30:57.558Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-27T13:30:57.622Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-27T13:30:57.622Z] > authorizing via signed-in user (alanthomasshaji079@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Open_Source\resume-builder-react
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-02-27T13:31:04.676Z] Using project from CLI flag: resume-builder-69420
+[debug] [2022-02-27T13:31:04.678Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/resume-builder-69420 [none]
+[debug] [2022-02-27T13:31:05.377Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/resume-builder-69420 200
+[debug] [2022-02-27T13:31:05.377Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/resume-builder-69420 {"projectId":"resume-builder-69420","projectNumber":"493003465288","displayName":"resume-builder","name":"projects/resume-builder-69420","resources":{"hostingSite":"resume-builder-69420"},"state":"ACTIVE"}
+[info] i  Using project resume-builder-69420 (resume-builder) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-02-27T13:31:58.124Z] Error: kill ENOSYS
+    at process.kill (internal/process/per_thread.js:200:13)
+    at process.listener (C:\Users\capta\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at process.emit (events.js:315:20)
+[error] 
+[error] Error: An unexpected error has occurred.
