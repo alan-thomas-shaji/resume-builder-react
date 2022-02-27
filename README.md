@@ -1,2 +1,3 @@
-# resume-builder-react
-A react project to help you create a resume online!
+# resume-builder 📃
+## A project made to impress the people at Impress.ai 🤖
+This web app aims to help you build a resume online for free! 
