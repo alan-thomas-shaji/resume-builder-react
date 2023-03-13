@@ -1,5 +1,4 @@
 # resume-builder 📃
-## A project made to impress the people at Impress.ai 🤖
 This web app aims to help you build a resume online for free! Check it out [here](http://alan-thomas-shaji.github.io/resume-builder-react/) 
 # How to test ⚒️:
 ### 1. Clone the repo
